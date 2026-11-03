@@ -1,0 +1,206 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": [
+        "33across.com",
+        "3lift.com",
+        "ad.plus",
+        "adcash.com",
+        "adcolony.com",
+        "adform.net",
+        "adhese.com",
+        "adition.com",
+        "admixer.net",
+        "adnxs.com",
+        "adroll.com",
+        "ads-twitter.com",
+        "ads.linkedin.com",
+        "ads.yahoo.com",
+        "adsafeprotected.com",
+        "adservice.google.com",
+        "adskeeper.com",
+        "adsrvr.org",
+        "adsterra.com",
+        "adtelligent.com",
+        "advertising.com",
+        "adzerk.net",
+        "amazon-adsystem.com",
+        "an.facebook.com",
+        "aniview.com",
+        "bidswitch.net",
+        "casalemedia.com",
+        "chartboost.com",
+        "clickadu.com",
+        "connatix.com",
+        "contextweb.com",
+        "criteo.com",
+        "criteo.net",
+        "districtm.io",
+        "doubleclick.net",
+        "doubleverify.com",
+        "emxdgt.com",
+        "exoclick.com",
+        "flashtalking.com",
+        "googleadservices.com",
+        "googlesyndication.com",
+        "googletagservices.com",
+        "gumgum.com",
+        "hilltopads.net",
+        "improvedigital.com",
+        "indexww.com",
+        "inmobi.com",
+        "juicyads.com",
+        "kargo.com",
+        "lijit.com",
+        "media.net",
+        "mgid.com",
+        "moatads.com",
+        "onetag-sys.com",
+        "openx.net",
+        "outbrain.com",
+        "popads.net",
+        "popcash.net",
+        "popmyads.com",
+        "primis.tech",
+        "propellerads.com",
+        "pubmatic.com",
+        "revcontent.com",
+        "richaudience.com",
+        "rubiconproject.com",
+        "seedtag.com",
+        "serving-sys.com",
+        "sharethrough.com",
+        "smaato.net",
+        "smartadserver.com",
+        "sonobi.com",
+        "sovrn.com",
+        "spotx.tv",
+        "spotxchange.com",
+        "static.ads-twitter.com",
+        "taboola.com",
+        "teads.tv",
+        "trafficjunky.net",
+        "triplelift.com",
+        "undertone.com",
+        "unrulymedia.com",
+        "vidazoo.com",
+        "yieldlab.net",
+        "yieldmo.com",
+        "zedo.com",
+        "zemanta.com"
+      ],
+      "excludedResourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||youtube.com/pagead/",
+      "excludedResourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||youtube.com/api/stats/ads",
+      "excludedResourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||youtube.com/get_midroll_",
+      "excludedResourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||google.com/pagead/",
+      "excludedResourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||google.com/adsense/",
+      "excludedResourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/pagead/js/adsbygoogle.js",
+      "excludedResourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/prebid.js",
+      "excludedResourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/prebid-",
+      "excludedResourceTypes": [
+        "main_frame"
+      ]
+    }
+  }
+]

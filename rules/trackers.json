@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": [
+        "adsymptotic.com",
+        "agkn.com",
+        "analytics.google.com",
+        "analytics.tiktok.com",
+        "api.amplitude.com",
+        "api.segment.io",
+        "bat.bing.com",
+        "bluekai.com",
+        "bounceexchange.com",
+        "chartbeat.com",
+        "chartbeat.net",
+        "clarity.ms",
+        "crazyegg.com",
+        "crwdcntrl.net",
+        "ct.pinterest.com",
+        "demdex.net",
+        "everesttech.net",
+        "exelator.com",
+        "eyeota.net",
+        "fullstory.com",
+        "google-analytics.com",
+        "heapanalytics.com",
+        "hm.baidu.com",
+        "hotjar.com",
+        "hotjar.io",
+        "id5-sync.com",
+        "krxd.net",
+        "liadm.com",
+        "mathtag.com",
+        "mc.yandex.ru",
+        "mixpanel.com",
+        "mouseflow.com",
+        "nr-data.net",
+        "omtrdc.net",
+        "pixel.wp.com",
+        "px.ads.linkedin.com",
+        "quantcount.com",
+        "quantserve.com",
+        "rlcdn.com",
+        "scorecardresearch.com",
+        "stats.wp.com",
+        "tapad.com"
+      ],
+      "excludedResourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||facebook.com/tr^",
+      "excludedResourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||connect.facebook.net^*/fbevents.js",
+      "excludedResourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||google.com/ads/ga-audiences",
+      "excludedResourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "/gtag/js?id=AW-",
+      "excludedResourceTypes": [
+        "main_frame"
+      ]
+    }
+  }
+]

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiet Page Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <header>
+      <img src="../icons/on-48.png" alt="" width="36" height="36">
+      <div>
+        <h1>Quiet Page</h1>
+        <p class="sub">Ad blocker settings</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Blocking</h2>
+      <label class="row">
+        <div>
+          <div class="label">Block ads</div>
+          <div class="hint">Turn off to pause Quiet Page on every site.</div>
+        </div>
+        <span class="switch"><input type="checkbox" id="enabled"><span class="slider"></span></span>
+      </label>
+      <label class="row">
+        <div>
+          <div class="label">Block trackers and analytics</div>
+          <div class="hint">Stops common tracking scripts and pixels as well as ads.</div>
+        </div>
+        <span class="switch"><input type="checkbox" id="blockTrackers"><span class="slider"></span></span>
+      </label>
+      <div class="row" id="totalRow">
+        <div>
+          <div class="label">Requests blocked</div>
+          <div class="hint">Counted since install. Only tracked when loaded as an unpacked extension.</div>
+        </div>
+        <div class="total"><b id="total">0</b> <button class="link" id="resetTotal">Reset</button></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Allowlisted sites</h2>
+      <p class="hint">Quiet Page won't block anything on these sites or their subdomains.</p>
+      <form id="allowForm" class="add">
+        <input id="allowInput" type="text" placeholder="example.com" autocomplete="off" spellcheck="false">
+        <button class="btn primary" type="submit">Add site</button>
+      </form>
+      <p class="error" id="allowError" hidden></p>
+      <ul id="allowList" class="list"></ul>
+      <p class="empty" id="allowEmpty">No sites allowlisted.</p>
+    </section>
+
+    <section class="card">
+      <h2>Custom filters</h2>
+      <p class="hint">One filter per line. Rules made with “Block an element” show up here too.</p>
+      <textarea id="filters" spellcheck="false" rows="10" placeholder="||annoying-ads.example^&#10;example.com##.sidebar-promo"></textarea>
+      <div class="filter-actions">
+        <span id="filterStatus" class="status"></span>
+        <button class="btn primary" id="saveFilters">Save filters</button>
+      </div>
+      <ul class="errors" id="filterErrors" hidden></ul>
+      <details>
+        <summary>Filter syntax</summary>
+        <table>
+          <tr><td><code>! note</code></td><td>Comment, ignored</td></tr>
+          <tr><td><code>ads.example.com</code></td><td>Block all requests to a domain and its subdomains</td></tr>
+          <tr><td><code>||ads.example.com^</code></td><td>Same, in Adblock syntax</td></tr>
+          <tr><td><code>||example.com/banners/*</code></td><td>Block requests whose URL matches the pattern</td></tr>
+          <tr><td><code>##.promo-box</code></td><td>Hide elements matching a CSS selector on every site</td></tr>
+          <tr><td><code>example.com##.promo-box</code></td><td>Hide elements on one site (separate several hosts with commas)</td></tr>
+        </table>
+      </details>
+    </section>
+  </main>
+
+  <script type="module" src="options.js"></script>
+</body>
+</html>
